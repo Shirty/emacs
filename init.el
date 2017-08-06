@@ -8,8 +8,8 @@
 (tool-bar-mode -1)
 
 ; evil mode for nice vim features
-(require 'evil)
-(evil-mode 1)
+; (require 'evil)
+; (evil-mode 0)
 
 ; added for evil? wtf?
 (custom-set-variables
@@ -17,6 +17,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-agenda-files (quote ("a:/drive/org/test.org")))
+ '(org-refile-targets
+   (quote
+    ((nil :maxlevel . 1)
+     ("./da.org" :tag . "refiler")
+     ("./emacs.org" :tag . "refiler")
+     ("./general.org" :tag . "refiler")
+     ("./learn.org" :tag . "refiler")
+     ("./life.org" :tag . "refiler")
+     ("./now.org" :tag . "refiler")
+     ("./pers.org" :tag . "refiler"))))
  '(package-selected-packages (quote (evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
